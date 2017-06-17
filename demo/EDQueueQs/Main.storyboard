@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uc-yn-X3g">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="70p-k9-10l" userLabel="txtAcitivity">
+                                <rect key="frame" x="32" y="73" width="311" height="311"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="70p-k9-10l" secondAttribute="height" multiplier="1:1" id="bDv-0p-gqO"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqM-7W-cHh">
+                                <rect key="frame" x="16" y="400" width="343" height="30"/>
+                                <state key="normal" title="Add A Good Job"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1X-e7-Rdr">
+                                <rect key="frame" x="16" y="446" width="343" height="30"/>
+                                <state key="normal" title="Add A Bad Job"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGd-IB-mbd">
+                                <rect key="frame" x="16" y="492" width="343" height="30"/>
+                                <state key="normal" title="Add A Critical Job"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="70p-k9-10l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="4sE-gp-ayj"/>
+                            <constraint firstItem="tqM-7W-cHh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Mbr-QN-dGE"/>
+                            <constraint firstItem="tqM-7W-cHh" firstAttribute="top" secondItem="70p-k9-10l" secondAttribute="bottom" constant="16" id="WTa-wZ-9IE"/>
+                            <constraint firstItem="6Uc-yn-X3g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="dd6-AX-vZ3"/>
+                            <constraint firstItem="70p-k9-10l" firstAttribute="top" secondItem="6Uc-yn-X3g" secondAttribute="bottom" constant="16" id="gMV-Ew-XiN"/>
+                            <constraint firstItem="6Uc-yn-X3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="jPd-uH-O7n"/>
+                            <constraint firstAttribute="trailing" secondItem="lGd-IB-mbd" secondAttribute="trailing" constant="16" id="jbP-Vs-NKc"/>
+                            <constraint firstAttribute="trailing" secondItem="tqM-7W-cHh" secondAttribute="trailing" constant="16" id="jql-Bm-5BR"/>
+                            <constraint firstItem="lGd-IB-mbd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mWT-wT-viD"/>
+                            <constraint firstItem="k1X-e7-Rdr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mfa-HW-1FT"/>
+                            <constraint firstAttribute="trailing" secondItem="k1X-e7-Rdr" secondAttribute="trailing" constant="16" id="oE4-7d-K0A"/>
+                            <constraint firstItem="k1X-e7-Rdr" firstAttribute="top" secondItem="tqM-7W-cHh" secondAttribute="bottom" constant="16" id="qcB-lG-f1p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="70p-k9-10l" secondAttribute="trailing" constant="16" id="vEe-BX-u9l"/>
+                            <constraint firstItem="lGd-IB-mbd" firstAttribute="top" secondItem="k1X-e7-Rdr" secondAttribute="bottom" constant="16" id="vKb-yY-4Dh"/>
+                            <constraint firstAttribute="trailing" secondItem="6Uc-yn-X3g" secondAttribute="trailing" constant="16" id="x73-j0-04F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddCritical" destination="lGd-IB-mbd" id="tGm-LA-rns"/>
+                        <outlet property="btnAddFail" destination="k1X-e7-Rdr" id="IAR-bj-zzP"/>
+                        <outlet property="btnAddSuccess" destination="tqM-7W-cHh" id="5O2-7t-mzF"/>
+                        <outlet property="txtActivity" destination="70p-k9-10l" id="v2O-DN-SXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

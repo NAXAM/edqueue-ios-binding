@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.EDQueue.iOS</id>
+        <version>0.7.4</version>
+        <description>Xamarin Binding Library - EDQueue</description>
+        <authors>Vu Duc Tuyen</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - EDQueue</title>
+        <releaseNotes>EDQueue 0.7.4</releaseNotes>
+        <summary>Xamarin Binding Library - EDQueue</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/edqueue-ios-binding</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.iOS, edqueue</tags>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.EDQueue.iOS/bin/Release/Naxam.EDQueue.iOS.dll" target="lib/Xamarin.iOS10/Naxam.EDQueue.iOS.dll" />
+    </files>
+</package>
